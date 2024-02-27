@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recipe.css">
+   <title>Recipe Sharing Platform</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+        <h1>Recipe Sharing Platform</h1>
+        </header>
+        <form id="recipeForm">
+            <label for="recipeName">Recipe Name:</label>
+            <input type="text" id="recipeName" required>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" required></textarea>
+
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" required></textarea>
+
+            <button type="button" onclick="submitRecipe()">Submit Recipe</button>
+        </form>
+
+        <div id="recipeList">
+            <!-- Display recipes here -->
+        </div>
+    </div>
+
+    <script src="recipe.js"></script>
+</body>
+</html>
